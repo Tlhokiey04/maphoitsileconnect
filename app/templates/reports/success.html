@@ -1,0 +1,56 @@
+{% extends 'reports/base.html' %}
+{% block title %}Report Submitted — MaphoitsileConnect{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card text-center mt-4"
+         style="border-top: 5px solid #198754;">
+      <div class="card-body p-5">
+
+        <div class="mb-3">
+          <div style="width:70px; height:70px; border-radius:50%;
+                      background:#d1e7dd; display:flex;
+                      align-items:center; justify-content:center;
+                      margin:0 auto;">
+            <i class="bi bi-check-lg"
+               style="font-size:2rem; color:#198754;"></i>
+          </div>
+        </div>
+
+        <h4 class="fw-bold mb-1" style="color:#0a3622;">
+          Report Submitted Successfully!
+        </h4>
+        <p class="text-muted mb-3">
+          Your issue has been logged and forwarded to the municipality.
+          You will receive updates as the status changes.
+        </p>
+
+        <div class="p-3 mb-4 rounded"
+             style="background:#f8f9fa; border:1px solid #dee2e6;
+                    display:inline-block; min-width:260px;">
+          <div class="text-muted small mb-1">Your reference number</div>
+          <div class="fw-bold fs-5" style="color:#1a3a6b;">
+            #MC-{{ issue.pk|stringformat:"05d" }}
+          </div>
+          <div class="text-muted small mt-1">
+            {{ issue.get_category_display }}
+            — {{ issue.created_at|date:"d M Y" }}
+          </div>
+        </div>
+
+        <div class="d-grid gap-2">
+          <a href="{% url 'dashboard' %}" class="btn btn-primary">
+            <i class="bi bi-speedometer2 me-1"></i> Go to Dashboard
+          </a>
+          <a href="{% url 'report_issue' %}"
+             class="btn btn-outline-secondary">
+            <i class="bi bi-plus-circle me-1"></i> Report Another Issue
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
