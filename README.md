@@ -105,12 +105,6 @@ To update issue statuses (Pending → In Progress → Resolved):
 
 ---
 
-## 📸 Screenshots
-
-> Register page, Dashboard, Report Form, Success Page, 
-> Issue Detail with Timeline — add screenshots here
-
----
 
 ## 📜 License
 
