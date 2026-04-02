@@ -40,47 +40,7 @@ Sol Plaatje University | Student: Tlhokomelo Matsitle | 202407083
 
 ---
 
-## ⚙️ How to Run the Project Locally
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/Tlhokiey04/maphoitsileconnect.git
-cd maphoitsileconnect
-```
-
-### 2. Create and activate virtual environment
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install dependencies
-```bash
-pip install django pillow
-```
-
-### 4. Run migrations
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
-
-### 5. Create admin account
-```bash
-python manage.py createsuperuser
-```
-
-### 6. Run the server
-```bash
-python manage.py runserver
-```
-
-### 7. Open in browser
-```
-http://127.0.0.1:8000/
-```
-
----
 
 ## 📱 Pages and URLs
 
@@ -95,19 +55,7 @@ http://127.0.0.1:8000/
 
 ---
 
-## 👤 User Personas
 
-### Persona 1 — Mr Tumelo Segang (Age 40)
-- Senior Applications Developer
-- Needs a simple and fast reporting process
-- Frustrated by confusing navigation and lack of feedback
-
-### Persona 2 — Mr Pablo Mphahlele (Age 29)
-- Qualified Teacher
-- Mobile user who needs a responsive interface
-- Frustrated by slow websites and no status updates
-
----
 
 ## 🎨 Design Principles Applied
 
